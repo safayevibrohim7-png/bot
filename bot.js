@@ -1,4 +1,5 @@
-
+const express = require('express');
+const TelegramBot = require('node-telegram-bot-api');  // <<— BU QATOR SHART
 
 const token = process.env.BOT_TOKEN || '7841059570:AAFEPUTgf1MGoFZDOBKZNK5X8xvg7hTZJHA';
 const bot = new TelegramBot(token);
@@ -25,3 +26,4 @@ bot.onText(/\/start/, (msg) => {
 });
 
 app.listen(3000, () => console.log('Bot webhook rejimida ishlayapti'));
+
