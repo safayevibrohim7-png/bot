@@ -41,7 +41,6 @@ bot.onText(/\/start/, (msg) => {
 });
 
 // 8. Serverni ishga tushiramiz
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Bot webhook rejimida ishlayapti ${PORT}-portda`);
-});
+const PORT = process.env.PORT || 10000; // Render o'zi beradi
+app.listen(PORT, () => console.log(`Server ${PORT}-portda ishlayapti`));
+
